@@ -1,0 +1,4 @@
+Flask==0.12.2
+yahoo-finance==1.4.0
+satori-cli==0.9.9
+satori-sdk-python==1.0.3

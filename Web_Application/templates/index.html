@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Stock Data Exchange
+</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="row" style="background-color:#e62739">
+<div class="col-md-4"></div>
+<div class="col-md-4" style="margin-left: 100px ; color:white"><h1>Flask is Fun!</h1></div>
+<div class="col-md-4"></div>
+</div>
+
+<div class="container-fluid">
+<div class="row" >
+<div class="col-md-3" style = "background-color:#fae596 ; height:80vh" id="y">
+
+</div>
+
+<div class="col-md-6" style = "background-color:#62bcfa ; color:white ; height:80vh">
+<form action="/send" method="POST">
+<div class="form-group">
+<h3>Get Stock Data from YAHOO Finance API</h3>
+<label for="stock"><h4>Stock Name:</h4></label>
+<input type="text" class="form-control" name="stock"  id="stock" width="50px" required/>
+</div>
+<button  type="submit" id="check" class="btn btn-lg btn-default" style = "color:black">Get Stock Data</button></br>
+</form>
+
+<div><h3>Previous closing price for above stock is: {{ pcp }}<h3>
+<h3>Year High for above stock is: {{ yh }}<h3>
+<h3>Year Low for above stock is: {{ yl }}<h3>
+
+</div>
+</div>
+<div class="col-sm-3" style = "background-color:#fae596 ; height:80vh"></div>
+</div>
+<div class="row" style = "background-color:#9068be ; height:5vh">
+<div class="col-md-3"></div>
+<div class="col-md-3" style="margin-left: 200px"><h5>@Copyrights: Vipra and Snigdha</h5></div>
+<div class="col-md-3"></div>
+</div>
+
+</div>
+
+</body>
+</html>
